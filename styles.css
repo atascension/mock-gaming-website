@@ -121,7 +121,7 @@ p {
   padding: 1rem 2.5rem;
   cursor: pointer;
   border: none;
-  border-radius: 50px;
+  border-radius: 6px;
   transition: background-color var(--transition), transform var(--transition);
 }
 
