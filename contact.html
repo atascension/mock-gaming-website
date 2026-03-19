@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact &mdash; Retro Gaming Archive</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="nav-logo">RGA</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="history.html">History</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Mobile Menu -->
+  <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="history.html">History</a>
+    <a href="contact.html" class="active">Contact</a>
+  </nav>
+
+  <main>
+
+    <!-- Page Hero Banner -->
+    <div class="page-hero">
+      <div class="container">
+        <span class="page-hero-label">Apply Now</span>
+        <h1 class="page-hero-title">Get your collection<br>featured on the show.</h1>
+      </div>
+    </div>
+
+    <!-- Contact Intro -->
+    <section id="contact-intro-section">
+      <div class="container">
+        <div class="contact-intro-inner animate-target">
+          <h2 class="section-title">What Being Featured Means</h2>
+          <p>Being featured on the Retro Gaming Archive series means we come to you &mdash; wherever your collection lives. We film a full episode documenting your space, your story, and the pieces that matter most to you. The finished episode goes live on our channel, and a written profile is published permanently in the archive.</p>
+          <p>This isn&rsquo;t a quick social post. It&rsquo;s a proper, lasting document of your collection and the passion behind it. Fill out the form below to apply. We read every submission personally.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact-form-section">
+      <div class="container">
+
+        <!-- Application Form -->
+        <div class="form-container" id="form-container">
+          <form id="application-form" novalidate>
+
+            <!-- Full Name -->
+            <div class="form-group">
+              <label class="form-label" for="full-name">
+                Full Name <span class="required-mark" aria-hidden="true">*</span>
+              </label>
+              <input
+                type="text"
+                id="full-name"
+                name="full-name"
+                class="form-input"
+                placeholder="e.g. John Smith"
+                required
+                aria-required="true"
+                aria-describedby="full-name-error"
+              >
+              <span class="form-error" id="full-name-error" role="alert">Please enter your full name.</span>
+            </div>
+
+            <!-- Email Address -->
+            <div class="form-group">
+              <label class="form-label" for="email">
+                Email Address <span class="required-mark" aria-hidden="true">*</span>
+              </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="form-input"
+                placeholder="e.g. john@example.com"
+                required
+                aria-required="true"
+                aria-describedby="email-error"
+              >
+              <span class="form-error" id="email-error" role="alert">Please enter a valid email address.</span>
+            </div>
+
+            <!-- Location -->
+            <div class="form-group">
+              <label class="form-label" for="location">
+                City / State / Country <span class="required-mark" aria-hidden="true">*</span>
+              </label>
+              <input
+                type="text"
+                id="location"
+                name="location"
+                class="form-input"
+                placeholder="e.g. Austin, TX, USA"
+                required
+                aria-required="true"
+                aria-describedby="location-error"
+              >
+              <span class="form-error" id="location-error" role="alert">Please enter your city, state, and country.</span>
+            </div>
+
+            <!-- Collecting Duration -->
+            <div class="form-group">
+              <label class="form-label" for="collecting-time">
+                How Long Have You Been Collecting? <span class="required-mark" aria-hidden="true">*</span>
+              </label>
+              <input
+                type="text"
+                id="collecting-time"
+                name="collecting-time"
+                class="form-input"
+                placeholder="e.g. 15 years"
+                required
+                aria-required="true"
+                aria-describedby="collecting-time-error"
+              >
+              <span class="form-error" id="collecting-time-error" role="alert">Please tell us how long you&rsquo;ve been collecting.</span>
+            </div>
+
+            <!-- Collection Description -->
+            <div class="form-group">
+              <label class="form-label" for="collection-desc">
+                Describe Your Collection <span class="required-mark" aria-hidden="true">*</span>
+              </label>
+              <textarea
+                id="collection-desc"
+                name="collection-desc"
+                class="form-textarea"
+                placeholder="Tell us what you collect, the highlights of your collection, and what makes it special. The more detail, the better."
+                required
+                aria-required="true"
+                aria-describedby="collection-desc-error"
+              ></textarea>
+              <span class="form-error" id="collection-desc-error" role="alert">Please describe your collection.</span>
+            </div>
+
+            <!-- Referral Source (optional) -->
+            <div class="form-group">
+              <label class="form-label" for="referral">How Did You Find Us?</label>
+              <div class="select-wrapper">
+                <select
+                  id="referral"
+                  name="referral"
+                  class="form-select"
+                  aria-describedby="referral-hint"
+                >
+                  <option value="">Select an option&hellip;</option>
+                  <option value="google">Google</option>
+                  <option value="social-media">Social Media</option>
+                  <option value="word-of-mouth">Word of Mouth</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Submit -->
+            <button type="submit" class="form-submit-btn">Apply to Be Featured</button>
+
+            <p class="form-note">We read every submission personally and will be in touch within 7&ndash;10 days if you&rsquo;re a good fit.</p>
+
+          </form>
+
+          <!-- Thank You Message (hidden until successful submission) -->
+          <div class="thank-you" id="thank-you" aria-live="polite">
+            <span class="thank-you-icon">&#10003;</span>
+            <h3>Application Received!</h3>
+            <p>Thanks for applying! We read every submission personally and will be in touch within 7&ndash;10 days if you&rsquo;re a good fit.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">RGA</div>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="history.html">History</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <p class="footer-copy">&copy; 2026 Retro Gaming Archive. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
